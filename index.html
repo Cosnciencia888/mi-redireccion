@@ -2,61 +2,114 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Bienvenido a Montecarlo</title>
-    
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="Bienvenido a Montecarlo">
-    <meta property="og:description" content="Conéctate directamente con nosotros vía WhatsApp.">
-    <meta property="og:url" content="https://fastidious-kringle-a4a936.netlify.app/">
-    <meta property="og:type" content="website">
-    <meta property="og:image" content="https://tusitio.com/logo.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bono de Bienvenida</title>
 
-    <!-- Meta Pixel Code -->
+    <!-- Código del Pixel de Meta -->
     <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '3094025157419215');
+        !function(f,b,e,v,n,t,s) {
+            if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+            n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t,s)}(window, document,'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '2372161916484346');  // Reemplaza '2372161916484346' con tu Pixel ID
         fbq('track', 'PageView');
     </script>
     <noscript>
         <img height="1" width="1" style="display:none"
-        src="https://www.facebook.com/tr?id=3094025157419215&ev=PageView&noscript=1"/>
+        src="https://www.facebook.com/tr?id=2372161916484346&ev=PageView&noscript=1" />
     </noscript>
-    <!-- End Meta Pixel Code -->
+    <!-- Fin del Pixel de Meta -->
 
-    <script>
-        // Retraso antes de permitir la redirección para que Meta registre el evento
-        function redirectToWhatsApp() {
-            setTimeout(function() {
-                window.location.href = "https://wa.link/montecarlo";
-            }, 1000); // Redirige después de 1 segundo
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #7c3aed;
+            color: white;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
-
-        // Opcional: activar también al cargar la página después de 2 segundos
-        window.onload = function() {
-            setTimeout(function() {
-                document.getElementById('redirectButton').click();
-            }, 2000);
+        .container {
+            text-align: center;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+            margin: 0 20px;
+            box-sizing: border-box;
         }
-    </script>
+        .title {
+            font-size: 3em;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .subtitle {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+        .button {
+            background-color: #00d100;
+            color: white;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .game-container {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        .game {
+            width: 120px;
+            height: 120px;
+            background-color: #ddd;
+            border-radius: 10px;
+            background-size: cover;
+            background-position: center;
+        }
+        .game img {
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        .footer {
+            font-size: 0.8em;
+            color: #999;
+            margin-top: 40px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenido a Montecarlo</h1>
-    <p>Haz clic en el botón para iniciar el chat en WhatsApp:</p>
-    
-    <!-- BOTÓN para activar la redirección manualmente -->
-    <button id="redirectButton" onclick="redirectToWhatsApp()"
-        style="padding: 10px 20px; background-color: #25D366; color: white; font-size: 18px; border: none; border-radius: 5px; cursor: pointer;">
-        🚀 Ir a WhatsApp
-    </button>
-    
-    <!-- Enlace de respaldo por si el botón no funciona -->
-    <p>O si prefieres, <a href="https://wa.link/montecarlo" target="_blank">haz clic aquí</a>.</p>
+    <div class="container">
+        <!-- Título -->
+        <div class="title">BONO DE BIENVENIDA DEL 100%</div>
+
+        <!-- Botón -->
+        <a href="https://wa.link/bconline" class="button" target="_blank" onclick="fbq('track', 'Lead');">CLICK ACA PARA CREAR TU USUARIO</a>
+
+        <!-- Subtítulo -->
+        <div class="subtitle">¡CARGAS 2.000 Y TE DAMOS 4.000!</div>
+
+        <!-- Contenedor de juegos -->
+        <div class="game-container">
+            <div class="game" style="background-image: url('ruta/a/la/imagen1.jpg');"></div>
+            <div class="game" style="background-image: url('ruta/a/la/imagen2.jpg');"></div>
+            <div class="game" style="background-image: url('ruta/a/la/imagen3.jpg');"></div>
+            <div class="game" style="background-image: url('ruta/a/la/imagen4.jpg');"></div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">© 2025 BC. Todos los derechos reservados.</div>
+    </div>
 </body>
 </html>
